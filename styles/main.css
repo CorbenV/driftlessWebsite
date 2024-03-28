@@ -13,7 +13,7 @@
 /* HEAD */
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
     padding:0px;
     margin:0px;
     height:100%;
@@ -87,6 +87,11 @@ html{
 
 /* BODY */
 
+.stopScrolling {
+    height: 100vh !important;
+    overflow: hidden !important;
+}
+
 body{
     margin:0px;
     padding:0px;
@@ -94,27 +99,53 @@ body{
 }
 
 #popup{
-    display:none;
-    position:absolute;
+    position:relative;
     width:100%;
-    height:100%;
+    height:100vh;
+    z-index:100;
+    transition: all .2s;
 }
 
 #shadow{
-    width:inherit;
-    height:inherit;
+    position:fixed;
+    top:0;
+    width:100%;
+    height:100%;
     background-color:black;
     opacity:50%;
+    z-index: inherit;
+    transition: all .2s;
+    z-index:99;
 }
 
 #panel{
-    position:relative;
-    width:50%;
-    height:80%;
+    position:fixed;
+    width:45%;
+    height:auto;
     background-color:white;
     border-radius:.5vw;
     margin-left:auto;
     margin-right:auto;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:inherit;
+    transition: all .2s;
+}
+
+#popupDecline{
+    background-color:var(--driftlessGray);
+    border:3px solid var(--driftlessGray);
+}
+
+#popupDecline:hover{
+    background-color:white;
+    border:3px solid var(--driftlessGray);
+    color:var(--driftlessGray);
+}
+
+.popupFadeOut{
+    opacity:0% !important;
 }
 
 #content{
@@ -384,7 +415,7 @@ p{
 }
 
 .dRed{
-    color:var(--driftlessRed);
+    color:var(--driftlessRed) !important;
 }
 
 #contactContent{
@@ -425,14 +456,14 @@ p{
     transform:translate(-50%, -50%);
 }
 
-#contactForm{
+.contactForm{
     width:90%;
     height:80%;
     margin:1%;
     padding:1%;
 }
 
-#contactForm label{
+.contactForm label{
     display:block;
     font-size:1vw;
     font-weight:bold;
@@ -440,7 +471,7 @@ p{
     padding-bottom:.5vw;
 }
 
-#contactForm input, #contactForm select{
+.contactForm input, .contactForm select{
     width:100%;
     height:2vw;
     font-size:1vw;
@@ -449,11 +480,11 @@ p{
     padding-left:.5vw;
 }
 
-#contactForm select{
+.contactForm select{
     width:auto;
 }
 
-#contactForm textarea{
+.contactForm textarea{
     width:100%;
     height:30%;
     resize:none;
@@ -464,7 +495,7 @@ p{
     padding-bottom:.5vw;
 }
 
-#contactForm button{
+.contactForm button{
     background-color:var(--driftlessRed);
     line-height:2vw;
     width:7vw;
@@ -478,7 +509,7 @@ p{
     margin-top:1rem;
 }
 
-#contactForm button:hover{
+.contactForm button:hover{
     background-color:white;
     color:var(--driftlessRed);
 }

@@ -21,13 +21,6 @@
                 ><li id="contactBtn">CONTACT</li>
             </ul>
         </nav>
-        <div id="popup">
-            <div id="shadow"></div>
-                <div id="panel">
-                    <h1></h1>
-                </div>
-            </div>
-        </div>
         <div id="content">
             <div id="imgBanner">
                 <img src="images/optn.jpg" alt="group photo with community">
@@ -214,7 +207,7 @@
             <div id="contactContent" class="shadow">
                 <div id="contactLeft">
                     <h1>Shoot us a Message!</h1>
-                    <form id="contactForm" action="https://formspree.io/f/mnqevdzj" method="POST">
+                    <form class="contactForm" action="https://formspree.io/f/mnqevdzj" method="POST">
                         <label>Name:</label>
                         <input name="Name" required="true">
                         <label>Email:</label>
@@ -266,6 +259,23 @@
                     <h5>&copy 2024 Driftless Crossfit | Developed by Corben Vaughn</h5>
                 </div>
             </footer>
+        </div>
+        <div id="popup">
+            <div id="shadow"></div>
+            <div id="panel" class="shadow">
+                <h2 class="dRed">Special Offer</h2>
+                <h1>30 Days For $30</h1>
+                <form class="contactForm" action="https://formspree.io/f/mnqevdzj" method="POST">
+                    <label>Name:</label>
+                    <input name="Name" required="true">
+                    <label>Email:</label>
+                    <input type="email" name="Email" required="true">
+                    <label>Phone Number:</label>
+                    <input name="Phone_Number" required="true">
+                    <button type="submit" class="shadow">Claim Offer</button>
+                    <button type="button" class="shadow" id="popupDecline">No Thanks</button>
+                </form>
+            </div>
         </div>
     </body>
 </html>

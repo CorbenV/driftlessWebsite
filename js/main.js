@@ -127,8 +127,41 @@ window.addEventListener('load', () => {
     }
 
     // parameters
+    const body = document.body;
+    const html = document.documentElement;
+    const popup = document.getElementById("popup");
+    const shadow = document.getElementById("shadow");
+    const panel = document.getElementById("panel");
+    function toggleScrolling(){
+        if(body.classList.contains("stopScrolling")){
+            body.classList.remove("stopScrolling");
+            html.classList.remove("stopScrolling");
+        }else{
+            body.classList.add("stopScrolling");
+            html.classList.add("stopScrolling");
+        }
+    }
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+
     const query = window.location.search;
     if(query == "?src=qr"){
         console.log("Deal");
+        toggleScrolling();
     }
+
+    const declineBtn = document.getElementById("popupDecline");
+    declineBtn.addEventListener("click", () => {
+        if(body.classList.contains("stopScrolling")){
+            popup.classList.add("popupFadeOut");
+            shadow.classList.add("popupFadeOut");
+            panel.classList.add("popupFadeOut");
+            sleep(200).then(() => {
+                popup.style.display = "none";
+                toggleScrolling();
+            });
+        }
+    });
 });
