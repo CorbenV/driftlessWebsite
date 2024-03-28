@@ -23,10 +23,10 @@
         </nav>
         <div id="content">
             <div id="imgBanner">
-                <img src="images/homeBanner.jpg" alt="group photo with community">
+                <img src="images/optn.jpg" alt="group photo with community">
                 <h1 id="homeTxt">Driftless Crossfit</h1>
                 <h2>Onalaska's Community Driven Hybrid Gym</h2>
-                <button class="shadow">Get In Touch</button>
+                <button class="shadow" id="bannerBtn">Join Now</button>
             </div>
             <h1>Who are we?</h1>
             <h3>At Driftless CrossFit, we pursue the highest standards of fitness, coaching, and facilities. Our mission is to improve each of our members lives through a community of like-minded fitness enthusiasts.    We create long lasting lifestyle changes that will impact your life for years to come.</h3>
@@ -209,15 +209,22 @@
                     <h1>Shoot us a Message!</h1>
                     <form id="contactForm" action="https://formspree.io/f/mnqevdzj" method="POST">
                         <label>Name:</label>
-                        <input name="Name">
+                        <input name="Name" required="true">
                         <label>Email:</label>
-                        <input type="email" name="Email">
+                        <input type="email" name="Email" required="true">
                         <label>Phone Number:</label>
-                        <input type="number" name="Phone-Number">
+                        <input name="Phone_Number" required="true">
                         <label>Program Interest:</label>
-                        <input name="Program Interest">
+                        <select name="Program_Interest" required="true">
+                            <option value="" disabled="true" selected>Select One</option>
+                            <option value="Crossfit_Classes">Crossfit Classes</option>
+                            <option value="Personal_Training">Personal Training</option>
+                            <option value="Fast_Factory">Fast Factory</option>
+                            <option value="Drop_In">Drop In</option>
+                            <option value="Other">Other (Message)</option>
+                        </select>
                         <label>Message (Optional):</label>
-                        <textarea name="Optional Message"></textarea>
+                        <textarea name="Optional_Message" required="false"></textarea>
                         <button type="submit" class="shadow">Submit</button>
                     </form>
                 </div>

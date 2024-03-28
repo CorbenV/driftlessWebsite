@@ -7,6 +7,7 @@ window.addEventListener('load', () => {
     const faqBtn = document.getElementById("faqBtn");
     const contactBtn = document.getElementById("contactBtn");
     const contactUpsellBtns = document.getElementsByClassName("contactBtnUpsell");
+    const bannerBtn = document.getElementById("bannerBtn");
 
     for(let i = 0; i < contactUpsellBtns.length; i++){
         contactUpsellBtns[i].addEventListener("click", () => {
@@ -41,6 +42,11 @@ window.addEventListener('load', () => {
     });
 
     contactBtn.addEventListener("click", () => {
+        const contact = document.getElementById("contact");
+        contact.scrollIntoView();
+    });
+
+    bannerBtn.addEventListener("click", () => {
         const contact = document.getElementById("contact");
         contact.scrollIntoView();
     });
@@ -118,5 +124,11 @@ window.addEventListener('load', () => {
                 box.style.marginBottom = "1vw";
             }
         });
+    }
+
+    // parameters
+    const query = window.location.search;
+    if(query == "?src=qr"){
+        console.log("Deal");
     }
 });
