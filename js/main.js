@@ -144,12 +144,13 @@ window.addEventListener('load', () => {
 
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
-      }
+    }
 
     const query = window.location.search;
     if(query == "?src=qr"){
         console.log("Deal");
         toggleScrolling();
+        popup.style.display = "block";
     }
 
     const declineBtn = document.getElementById("popupDecline");
