@@ -1099,6 +1099,23 @@ footer h5{
     footer h5{
         font-size:1.5vw;
     }
+    
+    #panel{
+        width:70%;
+        border-radius:2vw;
+    }
+
+    #panel label{
+        font-size:3vw;
+    }
+
+    #panel input{
+        height:5vw;
+    }
+
+    #panel button{
+        font-size:2vw;
+    }
 }
 
 /* tiny (phones) */
@@ -1527,5 +1544,23 @@ footer h5{
         font-size:3vw;
         width:100%;
         margin-top:25vw;
+    }
+
+    #panel{
+        width:90%;
+        border-radius:2vw;
+    }
+
+    #panel label{
+        font-size:4vw;
+    }
+
+    #panel input{
+        height:7vw;
+    }
+
+    #panel button{
+        font-size:3vw;
+        border-radius:2vw;
     }
 }
