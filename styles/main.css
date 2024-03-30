@@ -1103,7 +1103,429 @@ footer h5{
 
 /* tiny (phones) */
 @media only screen and (max-width:650px){
+    /* NAV */
+    #main-nav{
+        height:12vw;
+    }
+    
+    #main-nav li{
+        font-size:3vw;
+    }
+    
+    #main-nav img{
+        width:10%;
+        margin-right:-7vw;
+        padding:0;
+    }
+    
+    #contactBtn{
+        line-height:6vw;
+        width:18vw;
+        border-radius:1vw;
+    }
+
+    /* BODY */
+    #imgBanner h1, #imgBanner h2{
+        margin-bottom:1vw;
+    }
+    
+    #imgBanner h1{
+        font-size:13vw;
+        margin-bottom:-.5vw;
+    }
+    
+    #imgBanner h2{
+        font-size:6vw;
+    }
+    
+    #imgBanner button{
+        font-size:5vw;
+        width:35vw;
+        height:10vw;
+    }
+    
+    #bannerFiller{
+        left:55%;
+        width:100%;
+    }
+
     h1{
-        color:orange;
+        font-size:10vw;
+    }
+    
+    h2{
+        font-size:5vw;
+        margin-bottom:-5vw;
+    }
+    
+    h3{
+        font-size:5vw;
+        width:80%;
+    }
+    
+    p{
+        width:70%;
+        font-size:4vw;
+    }
+
+    #benefits{
+        margin-top:3vw;
+        width:90%;
+        height:auto;
+        flex-direction:column;
+    }
+    
+    .benefit{
+        width:70%;
+        height:70vw;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:5vw;
+    }
+    
+    .benefit h5{
+        font-size:3vw;
+    }
+    
+    .benefit h5 span{
+        font-size:10vw;
+    }
+    
+    .benefit h4{
+        font-size:5vw;
+    }
+
+    #reviews{
+        margin-top:3vw;
+        display:flex;
+        flex-wrap:wrap;
+        gap:3vw;
+        width:100%;
+        height:auto;
+        flex-direction:column;
+    }
+    
+    .review{
+        width:80%;
+        height:60vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    .review h5{
+        font-size:4vw;
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:-1vw;
+    }
+    
+    .review h5 i{
+        padding-left:.25vw;
+        padding-right:.25vw;
+    }
+    
+    .review h3{
+        margin-bottom:-.75vw;
+    }
+    
+    .review h4{
+        font-size:3vw;
+        max-width:80%;
+    }
+
+    #programDisplay{
+        flex-direction:column;
+        height:100vh;
+    }
+    
+    .program{
+        width:100%;
+        height:33.3333%;
+    }
+    
+    .program h1{
+        font-size:6vw;
+        top:40%;
+    }
+    
+    .program:hover{
+        height:50%;
+        width:100%;
+    }
+    
+    .program:hover h2{
+        font-size:4vw;
+    }
+
+    .promoInsert{
+        height:25vw;
+    }
+    
+    .promoInsert h2{
+        color:white;
+        text-shadow: -1px 1px 10px black;
+        font-size:5.5vw;
+    }
+    
+    .promoInsert button{
+        line-height:8vw;
+        width:30vw;
+        border-radius:1.5vw;
+        margin-top:7vw;
+        font-size:4vw;
+    }
+
+    #schedule{
+        width:90%;
+        font-size:3vw;
+        border-radius:1.5vw;
+    }
+    
+    #schedule tr th{
+        padding:1.5vw;
+        border-top-left-radius:1.5vw;
+        border-top-right-radius:1.5vw;
+    }
+    
+    #schedule tr td{
+        padding:1.5vw;
+    }
+
+    .faqBox{
+        width:95%;
+        margin-top:2vw;
+        margin-bottom:2vw;
+        height:6vw;
+        line-height:6vw;
+        font-size:4vw;
+        border-radius:1vw;
+    }
+    
+    .faqBoxInner{
+        position: relative;
+        transition:.3s;
+        width:100%;
+        max-height:0px;
+        overflow:hidden;
+        background-color:var(--driftlessRed);
+        margin-top:-1vw;
+        border-radius:.5vw;
+        z-index:-1;
+        box-shadow:none;
+    }
+
+    #contactContent{
+        position: relative;
+        width:95%;
+        height:290vw;
+        border-radius:1.5vw;
+    }
+
+    #contactRight{
+        position: relative;
+        margin-left:auto;
+        margin-right:auto;
+        border-top:10px solid var(--driftlessRed);
+        border-left:none;
+        margin-top:-140vw;
+        width:100%;
+    }
+
+    #contactRight iframe{
+        width:90%;
+        height:70vw;
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:8vw;
+        border-radius:.5vw;
+    }
+
+    #contactRight h2{
+        font-size:6vw;
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    #contactLeft{
+        position:relative;
+        width:100%;
+        border-right:none;
+        
+    }
+
+    #contactLeft h1{
+        width:100%;
+        font-size:8vw;
+        padding-top:3vw;
+        margin-bottom:3vw;
+    }
+    
+    #contactOr{
+        display:none;
+    }
+    
+    .contactForm{
+        width:94%;
+        height:80%;
+    }
+    
+    .contactForm label{
+        display:block;
+        font-size:5vw;
+        font-weight:bold;
+        padding-top:1vw;
+        padding-bottom:.5vw;
+    }
+    
+    .contactForm input, .contactForm select{
+        width:100%;
+        height:7vw;
+        font-size:4vw;
+        border:2px solid var(--driftlessGray);
+        border-radius:2vw;
+        padding-left:.5vw;
+    }
+    
+    .contactForm select{
+        width:auto;
+        height:8vw;
+    }
+    
+    .contactForm textarea{
+        width:100%;
+        height:20%;
+        resize:none;
+        font-size:4vw;
+        border:2px solid var(--driftlessGray);
+        border-radius:2vw;
+        padding-left:.5vw;
+        padding-bottom:.5vw;
+    }
+    
+    .contactForm button{
+        line-height:8vw;
+        width:25vw;
+        border-radius:1vw;
+        font-size:4vw;
+        margin-top:1vw;
+    }
+
+    /* FOOTER */
+
+    footer{
+        position:relative;
+        width:100%;
+        height:180vw;
+        margin-top:3vw;
+        align-self:center;
+        border-top:10px solid var(--driftlessRed);
+    }
+    
+    #footerContent{
+        display:block;
+        width:100%;
+        height:auto;
+        margin-left:auto;
+        margin-right:auto;
+        justify-content:center;
+        /* background-color:red; */
+    }
+    
+    #dropInAd, #journal, #socials{
+        width:90%;
+        height:30vw;
+        margin-left:auto;
+        margin-right:auto;
+        text-align:center;
+        margin-top:2.5vw;
+    }
+
+    #dropInAd{
+        margin-bottom:40vw;
+    }
+
+    #dropInAd h3{
+        font-size:8vw;
+    }
+    
+    #dropInAd h4{
+        font-size:4vw;
+        margin-top:-1vw;
+    }
+    
+    #dropInAd button{
+        background-color:var(--driftlessRed);
+        line-height:10vw;
+        width:30vw;
+        text-align:center;
+        border:3px solid var(--driftlessRed);
+        border-radius:2vw;
+        font-weight:bold;
+        font-size:4vw;
+        color:white;
+        transition: all .2s;
+        cursor:pointer;
+    }
+    
+    #dropInAd button:hover{
+        background-color:white;
+        color:var(--driftlessRed);
+    }
+
+    #journal h2{
+        font-size:8vw;
+        margin-bottom:0;
+    }
+    
+    #journal img{
+        margin-top:5vw;
+        width:60%;
+    }
+
+    #socials{
+        margin-bottom:15vw;
+    }
+
+    #socials h2{
+        font-size:10vw;
+        margin-top:1vw;
+        margin-bottom:1vw;
+    }
+    
+    .social{
+        display:inline-block;
+        width:15vw;
+        height:15vw;
+        padding:2vw;
+        margin-top:2.5vw;
+        margin-left:.5vw;
+        margin-right:.5vw;
+        line-height:21vw;
+        background-color:var(--driftlessRed);
+        border-radius:100%;
+        transition: all .2s;
+    }
+    
+    #socials .fa{
+        text-decoration:none;
+        color:white;
+        font-size:12vw;
+    }
+    
+    .social:hover i{
+        color:var(--driftlessRed) !important;
+    }
+    
+    .social:hover{
+        background-color:white !important;
+    }
+    
+    footer h5{
+        position:relative;
+        text-align: center;
+        font-size:3vw;
+        width:100%;
+        margin-top:25vw;
     }
 }
