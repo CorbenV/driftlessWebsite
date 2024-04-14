@@ -8,6 +8,7 @@ window.addEventListener('load', () => {
     const contactBtn = document.getElementById("contactBtn");
     const contactUpsellBtns = document.getElementsByClassName("contactBtnUpsell");
     const bannerBtn = document.getElementById("bannerBtn");
+    const murphBtn = document.getElementById("murphBtn");
 
     for(let i = 0; i < contactUpsellBtns.length; i++){
         contactUpsellBtns[i].addEventListener("click", () => {
@@ -49,6 +50,11 @@ window.addEventListener('load', () => {
     bannerBtn.addEventListener("click", () => {
         const contact = document.getElementById("contact");
         contact.scrollIntoView();
+    });
+
+    murphBtn.addEventListener("click", () => {
+        const murphPanel = document.getElementById("murphPanel");
+        murphPanel.scrollIntoView();
     });
 
     // schedule
@@ -146,15 +152,21 @@ window.addEventListener('load', () => {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
 
-    const query = window.location.search;
-    if(query == "?src=qr"){
-        console.log("Deal");
-        toggleScrolling();
-        popup.style.display = "block";
-    }
+    // const query = window.location.search;
+    // if(query == "?src=qr"){
+    //     toggleScrolling();
+    //     popup.style.display = "block";
+    // }
+
+    toggleScrolling();
+    popup.style.display = "block";
+
+    // we're just running the promo regardless for now
 
     const declineBtn = document.getElementById("popupDecline");
-    declineBtn.addEventListener("click", () => {
+    const xBtn = document.getElementById("popupClose");
+
+    function closePopup(){
         if(body.classList.contains("stopScrolling")){
             popup.classList.add("popupFadeOut");
             shadow.classList.add("popupFadeOut");
@@ -164,5 +176,8 @@ window.addEventListener('load', () => {
                 toggleScrolling();
             });
         }
-    });
+    }
+
+    declineBtn.addEventListener("click", closePopup);
+    xBtn.addEventListener("click", closePopup);
 });

@@ -10,6 +10,40 @@
     --driftlessGray:#989898;
 }
 
+/* TEMP */
+
+#murphPanel{
+    width:60%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:1vw;
+    padding:1vw;
+    margin-top:2vw;
+}
+
+#murphPanel img{
+    width:50%;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    border-radius:1vw;
+}
+
+#murphPanel a{
+    text-decoration:none;
+    color:var(--driftlessRed);
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+#murphPanel a:hover{
+    text-decoration:underline;
+}
+
 /* HEAD */
 
 html{
@@ -147,6 +181,27 @@ body{
 
 .popupFadeOut{
     opacity:0% !important;
+}
+
+#popupClose{
+    top:1vw;
+    left:1vw;
+    margin:0;
+    position:absolute;
+    font-size:1vw;
+    cursor:pointer;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:-1vw;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#popupClose span{
+    font-size:3vw;
 }
 
 #content{
@@ -1116,6 +1171,20 @@ footer h5{
     #panel button{
         font-size:2vw;
     }
+    
+    #popupClose span{
+        font-size:6vw;
+    }
+
+    /* TEMP */
+
+    #murphPanel{
+        width:80%;
+    }
+
+    #murphPanel img{
+        width:70%;
+    }
 }
 
 /* tiny (phones) */
@@ -1562,5 +1631,19 @@ footer h5{
     #panel button{
         font-size:3vw;
         border-radius:2vw;
+    }
+
+    #popupClose span{
+        font-size:8vw;
+    }
+
+    /* TEMP */
+
+    #murphPanel{
+        width:90%;
+    }
+
+    #murphPanel img{
+        width:85%;
     }
 }
