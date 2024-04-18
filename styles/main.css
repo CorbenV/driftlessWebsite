@@ -826,6 +826,27 @@ footer h5{
     font-size:.75vw;
 }
 
+.eventButton{
+    font-size:2.5vw;
+    color:white;
+    font-weight:bold;
+    width:17vw;
+    height:5vw;
+    cursor:pointer;
+    border-radius:.5vw;
+    background-color:var(--driftlessRed);
+    border:3px solid var(--driftlessRed);
+    transition: .2s all;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+.eventButton:hover{
+    background-color:white;
+    color:var(--driftlessRed);
+}
+
 /* BREAKPOINTS */
 
 /* small (tablets) */
@@ -1185,6 +1206,22 @@ footer h5{
     #murphPanel img{
         width:70%;
     }
+
+    .eventButton{
+        font-size:5vw;
+        color:white;
+        font-weight:bold;
+        width:40vw;
+        height:10vw;
+        cursor:pointer;
+        border-radius:1vw;
+        background-color:var(--driftlessRed);
+        border:3px solid var(--driftlessRed);
+        transition: .2s all;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+    }
 }
 
 /* tiny (phones) */
@@ -1195,7 +1232,7 @@ footer h5{
     }
     
     #main-nav li{
-        font-size:3vw;
+        font-size:2.5vw;
     }
     
     #main-nav img{
@@ -1645,5 +1682,22 @@ footer h5{
 
     #murphPanel img{
         width:85%;
+    }
+
+    .eventButton{
+        font-size:5vw;
+        color:white;
+        font-weight:bold;
+        width:50vw;
+        height:12vw;
+        cursor:pointer;
+        border-radius:1vw;
+        background-color:var(--driftlessRed);
+        border:3px solid var(--driftlessRed);
+        transition: .2s all;
+        margin-left:auto;
+        margin-right:auto;
+        display:block;
+        margin-bottom:3vw;
     }
 }

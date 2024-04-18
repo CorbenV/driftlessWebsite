@@ -180,4 +180,24 @@ window.addEventListener('load', () => {
 
     declineBtn.addEventListener("click", closePopup);
     xBtn.addEventListener("click", closePopup);
+
+    // TEMP
+    // MURPH
+
+    const sel = document.getElementsByName("Program_Interest")[0];
+    const msg = document.getElementsByName("Optional_Message")[0];
+    sel.addEventListener("change", () => {
+        if(sel.value == "Murph"){
+            msg.value = 
+            "My Shirt Size: \n\
+(S, M, L, XL, 2XL)\n\
+\n\
+My Heat Time: \n\
+(5K Walk/Run/Ruck - 9:30am)\n\
+(Murph Heats - 8:00am, 9:30am, 11:00am)\n\
+\n\
+My Payment Method: \n\
+(Venmo, ACH, Cash, Credit Card **+5.5%  Fee)";
+        }
+    });
 });
